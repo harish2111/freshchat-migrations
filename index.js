@@ -496,11 +496,7 @@ async function runMigration() {
       `\nFound ${sourceUsers.length} user(s) in the Excel file. Starting migration process...`
     );
 
-    let i = 0;
     for (const user of sourceUsers) {
-      if (i >= 2000) {
-        break;
-      }
       let destinationUserId = await getDestinationUserId(user);
       if (!destinationUserId) {
         const contact = await createContactinDestination({
@@ -527,7 +523,6 @@ async function runMigration() {
       await new Promise((resolve) =>
         setTimeout(resolve, config.delayBetweenUsersMs)
       );
-      i++;
     }
 
     writeDestinationContacts(migrationResults);
