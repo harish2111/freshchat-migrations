@@ -23,6 +23,7 @@ export const config = {
     defaultChannelId: "974fa2c7-608c-43dc-a736-ed8816491b51",
     defaultChannelId2: "cafb31d5-b28c-44da-a352-0a157b3921ba",
     fixedFallbackUserId: "cff24be9-58eb-4afa-9227-3030a6fa0709",
+    fixedAgentId: "e8364953-a9f2-417b-89cf-e701429dcf63",
     fixedActorId: "e8364953-a9f2-417b-89cf-e701429dcf63",
     fixedActorType: "agent",
   },
